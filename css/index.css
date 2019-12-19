@@ -1,3 +1,212 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
 
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.links {
+    display: flex;
+}
+nav {
+	width: 70%;
+    display: flex;
+	justify-content: space-around;
+    margin: 3%;
+}
+nav a{
+    color: lightslategrey;
+    text-decoration: none;
+}
+
+h1 {
+  font-size: 80px;
+}
+.innov {
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+.innov .top-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-left: 10%;
+      margin-top: 10%;
+      padding:2%;
+      
+}
+
+.button{
+    border: solid 1px black;
+    text-decoration: none;
+    padding: 3px 30px;
+    color: lightslategray;
+    margin-left: 20%;
+}
+
+.content {
+    display: flex;
+}
+.content .text {
+    display: flex;
+    flex-wrap: wrap;
+    margin: %;
+    padding: 2%;
+}
+.middle-image {
+    margin: 2%;
+    width: 100%;
+}
+
+.contact {
+    margin: 3%;
+}
+.contact p {
+	text-align: center;
+}
+.container{
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
+    margin-top: 3%;
+    margin: 3%;
+    width: 80%;
+}
+
+@media (max-width: 800px) {
+    .links {
+        flex-direction:column-reverse;
+        align-items: center
+    }
+    .links .logo {
+        width: 20%;
+        
+    }
+    .innov, .button {
+        display: flex;
+        justify-content: center;
+    }
+    .button {
+       width: 20%;
+       padding: 2%;
+       align-items: center;
+       margin-left: 30%
+    }
+    nav {
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 2%;
+    }
+    .middle-image {
+        width: 100%;
+    }
+    
+    .top-section img {
+        display: none;
+    }
+    .container {
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+    .logo, nav a{
+        border-bottom: solid 1px;
+        padding: 2%;
+        width: 100%;
+        text-align: center
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%
+    }
+    .innov, .button {
+        display: flex;
+        justify-content: center;
+    }
+    .button {
+       width: 30%;
+       align-items: center;
+       margin-left: 30%;
+       padding: 2%;    
+    }
+    h1 {
+        font-size: 40px;
+        
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        
+    }
+    .middle-image {
+        width: 100%;
+    }
+   
+}
